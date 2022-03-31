@@ -1,0 +1,22 @@
+{
+    "name": "farazasifali/blog",
+    "description": "A simple laravel blog with markdown",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fraz Ali",
+            "email": "farazasifali@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Farazasifali\\Blog\\": "src",
+            "Farazasifali\\Blog\\Tests\\": "tests"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "6.0",
+        "phpunit/phpunit": "^9.5"
+    }
+}
