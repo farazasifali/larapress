@@ -1,5 +1,5 @@
 {
-    "name": "farazasifali/blog",
+    "name": "farazasifali/laravel-blog",
     "description": "A simple laravel blog with markdown",
     "type": "library",
     "license": "MIT",
@@ -9,14 +9,21 @@
             "email": "farazasifali@gmail.com"
         }
     ],
-    "autoload": {
-        "psr-4": {
-            "Farazasifali\\Blog\\": "src",
-            "Farazasifali\\Blog\\Tests\\": "tests"
-        }
-    },
     "require-dev": {
         "orchestra/testbench": "6.0",
         "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "farazasifali\\Blog\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "farazasifali\\Blog\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "erusev/parsedown": "^1.7"
     }
 }
