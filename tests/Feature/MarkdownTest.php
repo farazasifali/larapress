@@ -1,8 +1,8 @@
 <?php
 
-namespace farazasifali\Blog\Tests\Feature;
+namespace farazasifali\Larapress\Tests\Feature;
 
-use farazasifali\Blog\MarkdownParser;
+use farazasifali\Larapress\MarkdownParser;
 use Orchestra\Testbench\TestCase;
 
 class MarkdownTest extends TestCase

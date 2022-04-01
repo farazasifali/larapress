@@ -1,6 +1,6 @@
 <?php
 
-namespace farazasifali\Blog;
+namespace farazasifali\Larapress;
 
 use Illuminate\Support\Facades\File;
 
@@ -13,16 +13,20 @@ class FileParser
     {
         $this->filename = $filename;
         $this->generateParts();
+        $this->explodeParts();
     }
 
-    public function generateParts()
+    protected function generateParts()
     {
-        preg_match_all('/^\-{3}(.*?)\-{3}(.*)/s',
+        preg_match('/^\-{3}(.*?)\-{3}(.*)/s',
             File::get($this->filename),
             $this->data
         );
+    }
 
-        dd($this->data);
+    protected function explodeParts()
+    {
+        dd(explode("\n", trim($this->data[1])));
     }
 
     public function getData()

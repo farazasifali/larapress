@@ -1,6 +1,6 @@
 <?php
 
-namespace farazasifali\Blog;
+namespace farazasifali\Larapress;
 
 use Parsedown;
 
