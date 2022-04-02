@@ -15,12 +15,20 @@
     },
     "autoload": {
         "psr-4": {
-            "farazasifali\\Larapress\\": "src/"
+            "farazasifali\\Larapress\\": "src/",
+            "farazasifali\\Larapress\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
             "farazasifali\\Larapress\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "farazasifali\\Larapress\\LarapressBaseServiceProvider"
+            ]
         }
     },
     "require": {

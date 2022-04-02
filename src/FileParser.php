@@ -26,7 +26,7 @@ class FileParser
 
     protected function explodeParts()
     {
-        dd(explode("\n", trim($this->data[1])));
+        explode("\n", trim($this->data[1]));
     }
 
     public function getData()

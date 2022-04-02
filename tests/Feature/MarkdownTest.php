@@ -3,7 +3,7 @@
 namespace farazasifali\Larapress\Tests\Feature;
 
 use farazasifali\Larapress\MarkdownParser;
-use Orchestra\Testbench\TestCase;
+use farazasifali\Larapress\Tests\TestCase;
 
 class MarkdownTest extends TestCase
 {
